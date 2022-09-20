@@ -15,11 +15,12 @@ body {
     width: auto;
     height: auto;
     z-index: -100;
+    cursor: url(http://www.javascriptkit.com/dhtmltutors/cursor-hand.gif), auto;
 }
 
 h1 {
     position: absolute;
-    bottom: 1%;
+    bottom: 5%;
     left: 5%;
     width: 94%;
     font-size: 36px;
@@ -27,4 +28,20 @@ h1 {
     color: #fff;
     font-family: Montserrat, sans-serif;
     text-align: left;
+}
+
+.blink {
+    animation: blinker 1.5s linear infinite;
+    color: white;
+    font-family: sans-serif;
+    position: absolute;
+    bottom: 3%;
+    left: 5%;
+    font-family: Montserrat, sans-serif;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
 }
